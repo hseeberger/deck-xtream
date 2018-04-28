@@ -16,7 +16,7 @@ body {
 
 .reveal {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 42px;
+  font-size: 32px;
   font-weight: normal;
   color: #222; }
 
@@ -50,18 +50,18 @@ body {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
+  text-transform: none;
   text-shadow: none;
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-size: 1.5em; }
 
 .reveal h2 {
-  font-size: 1.6em; }
+  font-size: 1.32em; }
 
 .reveal h3 {
-  font-size: 1.3em; }
+  font-size: 1.2em; }
 
 .reveal h4 {
   font-size: 1em; }
@@ -146,13 +146,13 @@ body {
   margin: 20px auto;
   text-align: left;
   font-size: 0.55em;
-  font-family: monospace;
+  font-family: Hack, monospace;
   line-height: 1.2em;
   word-wrap: break-word;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
 
 .reveal code {
-  font-family: monospace;
+  font-family: Hack, monospace;
   text-transform: none; }
 
 .reveal pre code {
@@ -271,3 +271,10 @@ body {
 @media print {
   .backgrounds {
     background-color: #fff; } }
+
+.reveal code {
+  font-family: inherit;
+  font-style: italic; }
+
+.reveal pre code {
+  font-style: normal; }
