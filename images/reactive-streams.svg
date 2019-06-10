@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-1.8982318 -31 445.07784 160.5" width="445.07784" height="160.5">
+  <defs>
+    <font-face font-family="HanziPen TC" font-size="24" panose-1="3 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="700">
+      <font-face-src>
+        <font-face-name name="HanziPenTC-W5"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#b1001c">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#4e8f00">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="HanziPen TC" font-size="20" panose-1="3 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="700">
+      <font-face-src>
+        <font-face-name name="HanziPenTC-W5"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.7.1 
+    <dc:date>2018-05-03 13:17:35 +0000</dc:date>
+  </metadata>
+  <g id="Arbeitsfl_che_1" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>Arbeitsfläche 1</title>
+    <g id="Arbeitsfl_che_1: Ebene 1">
+      <title>Ebene 1</title>
+      <g id="Graphic_7">
+        <path d="M -.4491174 -6826219e-10 L 120.3874 .18297903 M 119.76705 -.07550565 L 119.65798 46.05708 M 120.12762 45.219787 L -.23398897 45.388207 M .033132987 45.902044 L -5158087e-10 -.7145952 M -.3240929 -.14182146 L 119.8915 .01983867 M 119.90372 -.20047807 L 119.89634 45.095704 M 120.2527 45.14656 L .15777256 45.270507 M .09747233 45.77709 L .022928957 -.12492632" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(5 6)" fill="#666">
+          <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="9.604" y="25">Publisher</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <path d="M 319.35472 -.002569609 L 440.52545 .4799528 M 439.8935 .12735446 L 440.1701 45.506525 M 440.9648 44.59887 L 319.1707 44.58383 M 319.62905 45.02986 L 320.00486 -.58990016 M 319.48005 -.2105177 L 440.0207 .3422442 M 440.07753 .001994726 L 440.3735 44.47326 M 441.0898 44.47855 L 319.75772 44.51146 M 319.70058 44.90442 L 320.03555 -.12573687" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(325 6)" fill="#666">
+          <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="3.472" y="25">Subscriber</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <line x1="120" y1="15" x2="306.6" y2="15" marker-end="url(#FilledArrow_Marker)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_4">
+        <line x1="320" y1="30" x2="133.4" y2="30" marker-end="url(#FilledArrow_Marker_2)" stroke="#4e8f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_3">
+        <rect x="146.58473" y="-26.697215" width="49" height="39" fill="white"/>
+        <text transform="translate(151.58473 -21.197215)" fill="#b1001c">
+          <tspan font-family="HanziPen TC" font-size="20" font-weight="700" fill="#b1001c" x=".4" y="21">Data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <rect x="231.39185" y="32.457578" width="75" height="39" fill="white"/>
+        <text transform="translate(236.39185 37.957578)" fill="#4e8f00">
+          <tspan font-family="HanziPen TC" font-size="20" font-weight="700" fill="#4e8f00" x=".19" y="21">Demand</tspan>
+        </text>
+      </g>
+      <g id="Line_13">
+        <line x1="220" y1="-30" x2="220" y2="110" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_15">
+        <rect x="122" y="90.5" width="196" height="39" fill="white"/>
+        <text transform="translate(127 96)" fill="#666">
+          <tspan font-family="HanziPen TC" font-size="20" font-weight="700" fill="#666" x=".07" y="21">asynchronous boundary</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

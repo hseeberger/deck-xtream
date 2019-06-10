@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="8.033484 -3.610319 765.1597 327.40545" width="765.1597" height="327.40545">
+  <defs>
+    <font-face font-family="HanziPen TC" font-size="24" panose-1="3 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="700">
+      <font-face-src>
+        <font-face-name name="HanziPenTC-W5"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#666">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="HanziPen TC" font-size="20" panose-1="3 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="700">
+      <font-face-src>
+        <font-face-name name="HanziPenTC-W5"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.10.2 
+    <dc:date>2019-06-10 17:21:50 +0000</dc:date>
+  </metadata>
+  <g id="Arbeitsfl_che_1" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>Arbeitsfläche 1</title>
+    <g id="Arbeitsfl_che_1: Ebene 1">
+      <title>Ebene 1</title>
+      <g id="Graphic_26">
+        <path d="M 419.52803 5803341e-10 L 770.7643 -.43130247 M 770.31225 -1.1797384 L 770.0717 321.01735 M 770.9711 320.03308 L 419.32717 319.66246 M 419.63306 319.9732 L 420.00096 -.83342405 M 419.6529 -.24617034 L 770.4366 -.6058657 M 770.5492 -1.3046548 L 770.2054 319.90714 M 771.096 319.97968 L 419.7584 319.56735 M 419.6859 319.84813 L 420.0332 -.1251053" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(425 280)" fill="#666">
+          <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="134.648" y="25">Node B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <path d="M 459.736 149.99953 L 731.2009 150.48118 M 730.2137 149.70176 L 729.9592 220.7303 M 730.3787 219.95215 L 459.36494 219.95746 M 460.23575 220.40521 L 459.99724 149.17437 M 459.86105 149.85622 L 730.3361 150.2814 M 730.4392 149.57712 L 730.1288 219.8273 M 730.5037 219.90406 L 460.35925 219.90942 M 460.2412 220.28061 L 460.10534 149.87507" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_68">
+        <path d="M 9.516998 -22370826e-11 L 360.71584 .16243819 M 359.8854 -.4496204 L 359.87906 321.14003 M 360.30936 320.14182 L 10.08077 320.42874 M 10.436129 321.3542 L 9.998887 -.8197831 M 9.642028 -.19095868 L 360.0104 -.021896407 M 360.13355 -.57461796 L 360.04004 320.01718 M 360.4344 320.06647 L 10.559888 320.3222 M 10.437269 321.2294 L 10.003216 -.12483472" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(15 280)" fill="#666">
+          <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="133.592" y="25">Node </tspan>
+          <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" y="25">A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_67">
+        <path d="M 49.32083 149.99885 L 320.8539 150.45889 M 320.01082 149.75324 L 320.3854 219.8395 M 321.14654 219.52022 L 49.485446 219.62471 M 50.035267 220.48205 L 49.99965 149.3049 M 49.445845 149.8663 L 320.13964 150.30051 M 320.18133 149.628 L 320.5172 219.39546 M 321.27154 219.39776 L 50.15986 219.56317 M 50.04359 220.3571 L 50.015834 149.87505" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_66">
+        <path d="M 99.12467 20.001271 L 270.99196 19.75164 M 270.14784 18.956099 L 269.8863 70.28895 M 270.23373 69.899 L 98.89012 69.820215 M 99.62902 70.609865 L 100.00418 19.429582 M 99.24956 19.801917 L 270.26877 19.622915 M 270.3657 18.831572 L 270.11934 69.77438 M 270.3587 69.85445 L 99.75975 69.80413 M 99.64453 70.48406 L 100.02846 19.874292" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(105 27.5)" fill="#666">
+          <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="20.78" y="25">Api (HTTP)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_65">
+        <path d="M 79.6785 159.9997 L 131.13002 160.0491 M 130.27085 159.15895 L 130.394 210.7384 M 131.0709 210.2807 L 79.29481 210.01173 M 80.23815 210.7377 L 79.99791 159.55425 M 79.80352 159.85853 L 130.39808 159.82032 M 130.41107 159.0339 L 130.5965 210.15199 M 131.19573 210.18905 L 80.35962 209.92009 M 80.26085 210.6132 L 80.04107 159.8754" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(85 167.5)" fill="#666">
+          <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="12.836" y="25">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_64">
+        <path d="M 159.48235 159.99647 L 211.26806 160.3496 M 210.41222 159.36185 L 209.89205 210.18785 M 210.15808 209.6526 L 159.4495 210.21696 M 159.83259 210.86555 L 160.00106 159.67892 M 159.60791 159.7885 L 210.5277 160.14273 M 210.59979 159.23749 L 210.07365 209.53103 M 210.28432 209.63886 L 159.96055 210.16104 M 159.86246 210.74024 L 160.05369 159.87477" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(165 167.5)" fill="#666">
+          <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="12.836" y="25">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_63">
+        <path d="M 239.2862 160.0052 L 290.4061 159.63273 M 289.52577 159.3147 L 290.41253 210.63724 M 290.99526 210.0294 L 239.85417 210.41308 M 240.43974 210.99336 L 239.99184 159.05363 M 239.411 159.85542 L 289.656 159.46513 M 289.76067 159.1878 L 290.5508 209.90843 M 291.12075 209.96855 L 240.5606 210.402 M 240.4768 210.86912 L 240.0663 159.8755" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(245 167.5)" fill="#666">
+          <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="12.836" y="25">3</tspan>
+        </text>
+      </g>
+      <g id="Line_62">
+        <path d="M 156.66667 70 L 156.66667 110 L 30 110 L 30 185 L 37.1 185" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_61">
+        <rect x="50" y="90.5" width="40.16" height="39" fill="white"/>
+        <text transform="translate(55 95.5)" fill="#666">
+          <tspan font-family="HanziPen TC" font-size="20" font-weight="700" fill="#666" x="0" y="21">Req</tspan>
+        </text>
+      </g>
+      <g id="Line_60">
+        <path d="M 320 185 L 340 185 L 340 110 L 213.33333 110 L 213.33333 82.9" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_59">
+        <rect x="290" y="90.5" width="37.94" height="39" fill="white"/>
+        <text transform="translate(295 95.5)" fill="#666">
+          <tspan font-family="HanziPen TC" font-size="20" font-weight="700" fill="#666" x="0" y="21">Res</tspan>
+        </text>
+      </g>
+      <g id="Line_58">
+        <line x1="130" y1="185" x2="146.1" y2="185" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_57">
+        <line x1="210" y1="185" x2="227.1" y2="185" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_56">
+        <line x1="50" y1="185" x2="67.1" y2="185" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_55">
+        <line x1="290" y1="185" x2="307.1" y2="185" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_69">
+        <path d="M 172.5 210 L 172.5 260 L 400 260 L 400 185 L 446.1 185" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_70">
+        <path d="M 730 185 L 750 185 L 750 130 L 380 129.5 L 380 240 L 197.5 240 L 197.5 222.9" marker-end="url(#FilledArrow_Marker)" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

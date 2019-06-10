@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>TODO</title>
+  <title>Akka Streams to the Extreme</title>
 
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="css/theme/white.css">
@@ -42,7 +42,257 @@
 <!-- ########################################################################################### -->
 
 <section data-markdown><script type="text/template">
-# TODO
+# Akka Streams to the Extreme
+
+Heiko Seeberger
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# Used in Production at [MOIA](https://www.moia.io)
+
+![MOIA](images/moia.jpg "MOIA")
+</script></section>
+  
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# MOIA Ride Sharing
+
+- Running on AWS via k8s
+- Microservice architecture
+- Akka HTTP and Cluster for some services
+
+`Managing an Akka Cluster on k8s`
+<br>
+`Markus Jura, Wednesday, 15:30`
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# What could possibly go wrong?
+
+![Actor Processing](images/actor-processing.svg "Actor Processing")
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# Is this good enough?
+
+``` scala
+shutdown.addTask(PhaseServiceRequestsDone, "api.terminate") { () =>
+  binding.terminate(terminationDeadline).map(_ => Done)
+}
+```
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# Design Idea
+
+Why not implement (request handling) processes with Akka Streams?
+
+- A process (conceptually) is a `Flow[Req, Either[Error, Res], Any]`
+- Actors are only used for state spanning process stages or processes
+- Running processes suitably hooked into coordinated shutdown
+  - Accept no new requests
+  - Delay shutdown until accepted requests are processed
+</script></section>
+  
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# High-level Design
+
+![Streamee Design](images/streamee-design.svg "Streamee Design")
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# Benefits
+
+- Compositionality
+- Back-pressure
+- Lossless deployments
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# Challenges
+
+- How to link Akka HTTP routes and processes?
+- How to connect two running processes?
+- How to stream across cluster nodes?
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# These Tools can do the Trick
+
+- `FlowWithContext`
+- `SourceQueue`
+- `MergeHub`
+- `KillSwitch`
+- `SinkRef` (remote streaming)
+- `RestartSink`
+</script></section>
+  
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# Simplified Demo
+
+``` sh
+~ http '127.0.0.1:8080/shuffle-text?text=Hello Lausanne'
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: text/plain; charset=UTF-8
+Date: Mon, 10 Jun 2019 17:28:02 GMT
+Server: akka-http/10.1.8
+
+Hlelo Lansnaue
+```
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# How to link Akka HTTP routes and processes?
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# `SourceQueue`
+
+``` scala
+val queue = // `SouceQueue[Req]`
+  Source
+    .queue[Req](1, OverflowStrategy.dropNew) // fail fast
+    .to(???)
+    .run()
+
+processor.offer(request) // `Future[QueueOfferResult]`
+```
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# Pass along a `Promise[Res]`
+
+``` scala
+val queue =
+  Source
+    .queue[(Req, Promise[Res])](1, OverflowStrategy.dropNew) // fail fast
+    .via(???) // what does that mean for the process?
+    .to(Sink.foreach { case (res, p) => p.trySuccess(res) })
+    .run()
+```
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# `FlowWithContext`
+
+``` scala
+type Process = FlowWithContext[Req, Promise[Res], Res, Promise[Res], Any]
+
+process.map(req => ...) // `Promise[Res]` is threaded through transparently
+
+process.asFlow.map { case (req, promisedRes) => ... }
+```
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# How to link two running processes?
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# `MergeHub`
+
+``` scala
+val sink = // `Sink[(Req, Respondee[Res]), NotUsed]`
+  MergeHub
+    .source[(Req, Respondee[Res])](1)
+    .via(process)
+    .to(Sink.foreach { case (res, r) => r ! Respondee.Response(res) })
+    .run()
+```
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# How to stream across Cluster Nodes?
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# `SinkRef`
+
+``` scala
+val sinkRef = // `SinkRef[A]`
+  StreamRefs
+    .sinkRef()
+    .to(sink) // Sink[A, Any]
+    .run()
+```
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# `UniqueKillSwitch`
+
+``` scala
+val sink = // (`Sink[(Req, Respondee[Res]), NotUsed]`, UniqueKillSwitch)
+  MergeHub
+    .source[(Req, Respondee[Res])](1)
+    .viaMat(KillSwitches.single)(Keep.both)
+    .via(process)
+    .to(...)
+    .run()
+
+switch.shutdown()
+```
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# `RestartSink`
+
+``` scala
+val sink = // `Sink[Element, NotUsed]`
+  RestartSink.withBackoff(minBackoff, maxBackoff, 0) { () =>
+    createSink() // `Sink[Element, _]`
+  }
+
+```
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+# Meet Streamee
+
+Warning: Currently lacking behind!
+
+![Streamee](images/streamee.png "Streamee")
 </script></section>
 
 <!-- ########################################################################################### -->
@@ -50,8 +300,12 @@
 <section data-markdown><script type="text/template">
 # Thank you!
 
+- Demo code: [github.com/hseeberger/xtream](https://github.com/hseeberger/xtream)
+- Slides: [github.com/hseeberger/deck-xtream](https://github.com/hseeberger/deck-xtream)
+- Twitter: @hseeberger
+
 <div class="license">
-  <div>Copyright 2018 Heiko Seeberger</div>
+  <div>Copyright 2019 Heiko Seeberger</div>
   <div>
     [![License](https://i.creativecommons.org/l/by/4.0/88x31.png "License")](http://creativecommons.org/licenses/by/4.0)<br>
     <span class="license">Contents licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).</span>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-2.9129465 -97.75697 464.7322 145.99382" width="464.7322" height="145.99382">
+  <defs>
+    <font-face font-family="HanziPen TC" font-size="24" panose-1="3 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="700">
+      <font-face-src>
+        <font-face-name name="HanziPenTC-W5"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#b1001c">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#b1001c">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="HanziPen TC" font-size="20" panose-1="3 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="700">
+      <font-face-src>
+        <font-face-name name="HanziPenTC-W5"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.7.1 
+    <dc:date>2018-05-03 14:06:23 +0000</dc:date>
+  </metadata>
+  <g id="Arbeitsfl_che_1" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>Arbeitsfläche 1</title>
+    <g id="Arbeitsfl_che_1: Ebene 1">
+      <title>Ebene 1</title>
+      <g id="Group_32">
+        <g id="Graphic_31">
+          <path d="M 359.00886 -9169575e-10 L 460.074 .09258411 M 459.66644 -.1940093 L 459.5478 45.770045 M 460.2852 45.14384 L 358.8038 44.678697 M 359.62825 45.334025 L 360.0058 -.7067769 M 359.1339 -.1636182 L 459.79076 -.09289317 M 459.79164 -.31900877 L 459.6947 45.01552 M 460.4099 45.075923 L 359.75834 44.612573 M 359.6452 45.20814 L 360.0951 -.12524525" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(365 6)" fill="#666">
+            <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="24.72" y="25">Sink</tspan>
+          </text>
+        </g>
+        <g id="Graphic_30">
+          <path d="M 355 16 L 367 22.5 L 355 29 Z" fill="white"/>
+          <path d="M 355 16 L 367 22.5 L 355 29 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_25">
+        <g id="Graphic_24">
+          <path d="M -.8642978 -.001389482 L 100.04041 .16082923 M 99.55938 -.7739686 L 100.08601 45.16624 M 100.89548 44.786634 L -.86348 45.05674 M -.17006766 45.978873 L .0021603715 -.58407016 M -.7392891 -.13176004 L 99.69528 -.08605459 M 99.76604 -.8999048 L 100.28474 44.6629 M 101.02075 44.76404 L -.04133315 45.04926 M -.10284899 45.85366 L .058419215 -.12524627" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(5 6)" fill="#666">
+            <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="13.128" y="25">Source</tspan>
+          </text>
+        </g>
+        <g id="Graphic_23">
+          <path d="M 95 16 L 107 22.5 L 95 29 Z" fill="white"/>
+          <path d="M 95 16 L 107 22.5 L 95 29 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_29">
+        <g id="Graphic_28">
+          <path d="M 179.17036 17881578e-11 L 280.48817 -.021658753 M 280.05317 -.58544725 L 280.06345 46.118426 M 281.04674 45.27551 L 179.76781 45.270635 M 180.43777 45.717526 L 179.99681 -.3327598 M 179.29534 -.23795215 L 280.17827 -.2506767 M 280.19543 -.71045105 L 280.25114 45.15045 M 281.17174 45.191307 L 180.55849 45.21044 M 180.47626 45.593355 L 180.00795 -.1238792" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(185 6)" fill="#666">
+            <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="21.18" y="25">Flow</tspan>
+          </text>
+        </g>
+        <g id="Graphic_27">
+          <path d="M 275 16 L 287 22.5 L 275 29 Z" fill="white"/>
+          <path d="M 275 16 L 287 22.5 L 275 29 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="Graphic_26">
+          <path d="M 175 16 L 187 22.5 L 175 29 Z" fill="white"/>
+          <path d="M 175 16 L 187 22.5 L 175 29 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_33">
+        <g id="Graphic_35">
+          <path d="M -.9564744 -94.99915 L 100.52177 -95.08976 M 100.15811 -95.75536 L 99.52626 -50.027825 M 100.43645 -50.37533 L -.5649163 -50.09954 M .23854292 -49.1773 L -.002371209 -95.4555 M -.8314926 -95.14461 L 100.27387 -95.25752 M 100.3439 -95.87952 L 99.66107 -50.49779 M 100.56178 -50.379865 L .35873186 -50.22625 M .35174185 -49.302237 L .04461915 -95.12458" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(5 -89)" fill="#666">
+            <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="13.128" y="25">Source</tspan>
+          </text>
+        </g>
+        <g id="Graphic_34">
+          <path d="M 95 -79 L 107 -72.5 L 95 -66 Z" fill="white"/>
+          <path d="M 95 -79 L 107 -72.5 L 95 -66 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_36">
+        <g id="Graphic_38">
+          <path d="M 179.63202 -95.00009 L 280.1076 -94.97558 M 279.75913 -95.36398 L 280.02218 -48.626186 M 280.6749 -49.506655 L 179.47105 -49.69165 M 180.43746 -49.3108 L 179.99206 -95.82949 M 179.75704 -95.19512 L 279.88635 -95.22473 M 279.92786 -95.48923 L 280.2296 -49.63335 M 280.79987 -49.6199 L 180.55862 -49.699115 M 180.52911 -49.435483 L 180.00677 -95.12387" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <text transform="translate(185 -89)" fill="#666">
+            <tspan font-family="HanziPen TC" font-size="24" font-weight="700" fill="#666" x="24.72" y="25">Sink</tspan>
+          </text>
+        </g>
+        <g id="Graphic_37">
+          <path d="M 175 -79 L 187 -72.5 L 175 -66 Z" fill="white"/>
+          <path d="M 175 -79 L 187 -72.5 L 175 -66 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Line_39">
+        <line x1="107" y1="-72.5" x2="162.1" y2="-72.5" marker-end="url(#FilledArrow_Marker)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_42">
+        <line x1="107" y1="22.5" x2="162.1" y2="22.5" marker-end="url(#FilledArrow_Marker_2)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_43">
+        <line x1="287" y1="22.5" x2="342.1" y2="22.5" marker-end="url(#FilledArrow_Marker_2)" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_44">
+        <rect x="300.7" y="3" width="27" height="39" fill="white"/>
+        <text transform="translate(305.7 8.5)" fill="#b1001c">
+          <tspan font-family="HanziPen TC" font-size="20" font-weight="700" fill="#b1001c" x=".36" y="21">to</tspan>
+        </text>
+      </g>
+      <g id="Graphic_45">
+        <rect x="116.17559" y="3" width="35" height="39" fill="white"/>
+        <text transform="translate(121.17559 8.5)" fill="#b1001c">
+          <tspan font-family="HanziPen TC" font-size="20" font-weight="700" fill="#b1001c" x=".28" y="21">via</tspan>
+        </text>
+      </g>
+      <g id="Graphic_46">
+        <rect x="120.18022" y="-92" width="27" height="39" fill="white"/>
+        <text transform="translate(125.18022 -86.5)" fill="#b1001c">
+          <tspan font-family="HanziPen TC" font-size="20" font-weight="700" fill="#b1001c" x=".36" y="21">to</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
